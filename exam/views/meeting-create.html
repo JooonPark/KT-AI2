@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2020 업무 회의록 생성</title>
+	<meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    
+</head>
+<body >
+    
+    <nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<p1>
+			<a class="navbar-brand" href="/main">홈으로</a>
+			<a class="navbar-brand" href="/meeting/create">회의록생성</a>
+			<a class="navbar-brand" href="/meeting/delete/{{id}}">회의록삭제</a>
+            <a class="navbar-brand" href="/">로그아웃</a>
+                
+            </p1>
+		</div>
+    </nav>
+    
+     <div class="wrap">
+			<aside class="nav">
+				<ol>
+                    {{menu|safe}}
+				</ol>
+			</aside>
+			<div>
+				<section>
+					<div id='hoho'>
+                        <h2>회의록 작성</h2>
+                         <form action="/meeting/create" method="post">
+                             날짜 : <input type="date" name="title" style="width:38%;"><br><br>
+                             내용 : <textarea name="desc" placeholder="내용을 입력해주세요." cols="101" rows="10"></textarea><br>
+                         <button type="submit">　제출　</button>
+    
+         
+                         </form>
+					</div>
+					<hr>
+				  
+				</section>
+			
+			</div>
+	</div>
+    
+
+        
+     
+    
+</body>
+</html>

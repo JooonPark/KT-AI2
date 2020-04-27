@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2020 업무 회의록 생성</title>
+	<meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    
+</head>
+<body >
+    
+    <nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<p1>
+			<a class="navbar-brand" href="/main">홈으로</a>
+                <a class="navbar-brand" href="/">로그아웃</a>
+			<a class="navbar-brand" href="/crawling/create">구글크롤링생성</a>
+			<a class="navbar-brand" href="/crawling/delete/{{title}}">구글크롤링삭제</a>
+            
+                
+            </p1>
+		</div>
+    </nav>
+    
+     <div class="wrap">
+			<aside class="nav">
+				<ol>
+                    {{menu1|safe}}
+				</ol>
+			</aside>
+			<div>
+				<section>
+					<div id='hoho'>
+                        <h2>크롤링 작성</h2>
+                         <form action="/crawling/create" method="post">
+                            <p>검색어 : <input type="text" name="title" style="width:38%;"></p><br>
+                            <button type="submit">　저장하기　</button>
+    
+         
+                         </form>
+					</div>
+					<hr>
+				  
+				</section>
+			
+			</div>
+	</div>
+    
+
+        
+     
+    
+</body>
+</html>

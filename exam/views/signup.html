@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2020 업무 회의록 로그인</title>
+	<meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+   
+</head>
+<body >
+    
+    <nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<p1>
+
+            <a class="navbar-brand" href="/">홈으로</a>
+
+            </p1>
+		</div>
+    </nav>
+    
+<!--     <h1><a href="/login">2020 업무 메모</a></h1> -->
+    <div class="wrap">
+			<aside class="nav">
+				<ol>
+					     <h2>Login</h2>
+                         <form action="/" method="post">
+                             <p><input type="text" name="id" placeholder="User ID"></p>
+                             <p><input type="password" name='pw' placeholder="Password"></p>
+                         <button type="submit">　로그인　</button>
+                         <button onClick="location.href='/signup'; return false;">　회원가입　</button><br><br>
+
+                            {{message}}
+         
+                         </form>
+				</ol>
+			</aside>
+			<div>
+				<section>
+					<div id='hoho'>
+						
+                        <br>
+                        <form action="/signup" method="post">
+                            <p>Id : <input type="text" name="name" placeholder="ID"></p>
+                            <p>Pf : <input type="text" name="profile" placeholder="Profile"></p>
+                            <p>Pw : <input type="password" name="password" placeholder="Password"></p>
+                        <button type="submit">　회원가입　</button>
+    
+         
+                        </form>
+					</div>
+                    
+					<hr>
+				  
+				</section>
+			
+			</div>
+	</div>
+    
+    
+    
+        
+
+   
+</body>
+</html>

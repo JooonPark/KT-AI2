@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2020 업무 회의록</title>
+	<meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="/static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+   
+</head>
+<body>
+    
+        <nav class="navbar">
+		
+			<div>
+                <p1>
+		
+			
+			<a class="navbar-brand" href="/main">홈으로</a>
+            <a class="navbar-brand" href="/">로그아웃</a>        
+            <a class="navbar-brand" href="/crawling/create">구글크롤링생성</a>
+			<a class="navbar-brand" href="/crawling/delete/{{title}}">구글크롤링삭제</a>
+                    
+            </p1>
+                 
+            </div>
+           
+            
+                
+            
+		
+        </nav>
+    
+    
+
+    <div class="wrap">
+			<aside class="nav">
+				<ol>
+                    {{ menu1 | safe}}
+				</ol>
+			</aside>
+			<div>
+				
+					<div id='hoho'>
+                        <br>
+                        {% for file in files %}
+                        <img src="/{{file}}">
+                        {% endfor %}
+                        <br>
+                        <br>
+					</div>
+					<hr>
+				  
+				
+			
+			</div>
+	</div>
+
+       
+</body>
+</html>

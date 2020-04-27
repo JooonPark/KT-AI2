@@ -1,0 +1,14 @@
+textarea{width:300; height:500;}
+
+
+* {margin: 0; padding: 0; box-sizing:border-box; }
+html,body {height:100%;}
+header {height:100px;line-height: 100px;font-size:20px;}
+.wrap {position:relative; overflow: hidden; height: calc(100%); text-align: center;}
+aside.nav {float:left; padding: 30px; width:250px; height:100%; background-color: #64c095; color:#fff; font-size: 22px;}
+#hoho{font-size:20px; padding-top: 20px; padding-bottom: 20px;	margin-top: 0px;	margin-bottom: 0px;}
+.navbar {padding-top: 20px; padding-bottom: 20px;	margin-top: 0px; margin-bottom: 0px; background-color: rgb(53, 51, 51); color:white;}
+.navbar-brand{color:white; font-size:23px;}
+p1{text-align: left; word-spacing:20px; margin:30px; }
+.align-right{ color:white; font-size:23px; text-align : right; }
+		
